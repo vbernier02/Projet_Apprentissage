@@ -34,7 +34,7 @@ def plot_confusion_matrix(y_test, y_pred, target_names, save_path, model_name):
                 xticklabels=target_names, yticklabels=target_names)
     plt.title(f'Matrice de Confusion : {model_name}')
     plt.ylabel('Vraie Classe')
-    plt.xlabel('Classe PrÃ©dite')
+    plt.xlabel('Classe Prédite')
     plt.tight_layout()
     plt.savefig(save_path)
     plt.close()
