@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 
 def load_data(path):
     df = pd.read_csv(path)
-    X = df.drop('NObeyesdad', axis=1)
+    X = df.drop(['NObeyesdad', 'Weight', 'Height'], axis=1)  # ← Ajout ici
     y = df['NObeyesdad']
     return X, y
 
