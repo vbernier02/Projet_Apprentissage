@@ -4,7 +4,7 @@ import pytest
 from sklearn.compose import ColumnTransformer
 from preprocessing import load_data, encode_target, build_preprocessor, split_data
 
-DATA_PATH = "data/raw/ObesityDataSet_raw_and_data_sinthetic.csv"
+DATA_PATH = "../data/raw/ObesityDataSet_raw_and_data_sinthetic.csv"
 
 @pytest.fixture
 def mock_data():
